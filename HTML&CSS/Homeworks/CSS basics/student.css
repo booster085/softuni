@@ -1,0 +1,71 @@
+#head {
+	width: 400px;
+	height: 400px;
+	margin-top: 100px;
+	margin-left: 250px;
+	border: 2px solid black;
+	background-color: yellow;
+	border-radius: 50%;
+}
+.eye {
+	width: 80px;
+	height: 80px;
+	margin-top: 70px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+.left {
+	float: left;
+	margin-left: 70px;
+}
+.right {
+	float: right;
+	margin-right: 70px;
+}
+.pupil {
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: black;
+}
+.on-left-eye {
+	margin-top: 45px;
+	margin-left: 40px;
+}
+.nose {
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: red;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.mouth {
+	width: 200px;
+	height: 80px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 40px;
+	position: relative;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tooth {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border: 2px solid black;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	margin-left: 46px;
+}
+.second {
+	margin-left: 100px;
+}

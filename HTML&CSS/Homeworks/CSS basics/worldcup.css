@@ -1,0 +1,154 @@
+body {
+	padding: 0;
+	margin: 0;
+	font: 18px Calibri, sans-serif;
+}
+#frame {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 20px;
+	width: 990px;
+	height: 340px;
+	background-color: #00A849;
+}
+#main-table {
+	width: 958px;
+	height: 308px;
+	margin: 15px;
+	border: 2px solid black;
+	border-radius: 15px;
+	padding: 0;
+	border-spacing: 0;
+	overflow: hidden;
+}
+thead th {
+	font-size: 27px;
+	background: #F5D400;
+	height: 50.2px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black; 
+}
+tbody td {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	background-color: white;
+	padding: 0 7px;
+}
+.bet-header, tbody td:last-child {
+	border-right: none;
+}
+tbody tr:last-child td {
+	border-bottom: none;
+}
+tbody tr:nth-child(2n) td {
+	background-color: #DBDBDB;
+}
+.group, .result, .bet {
+	text-align: center;
+}
+.bet {
+	padding: 0;
+	height: 50px;
+	width: 100px;
+}
+.bet-box {
+	width: 35px;
+	height: 35px;
+	border: 1px solid #C9C9C9;
+	display: inline-table;
+	vertical-align: middle;
+	background-color: #F2F2F2;
+	color: red;
+	line-height: 35px;
+	text-align: left;
+	text-indent: 3px;
+}
+.arrow {
+	float: right;
+	margin-top: 15px;
+	margin-right: 5px;
+	width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 6px solid black;
+}
+tbody tr:nth-last-child(1) .bet-box, 
+tbody tr:nth-last-child(2) .bet-box {
+	background-color: white;
+}
+.bet-btn-box {
+	width: 36px
+}
+.bet-btn {
+	width: 33pxpx;
+	height: 33px;
+	border: 2px outset #C9C9C9;
+	border-radius: 50%;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	line-height: 33px;
+	background-color: red;
+	margin: auto;
+}
+tbody tr:nth-last-child(1) .bet-btn, 
+tbody tr:nth-last-child(2) .bet-btn {
+	background-color: green;
+}
+tbody tr:nth-last-child(1) .bet-box,
+tbody tr:nth-last-child(2) .bet-box {
+	color: green;
+}
+.bet-team {
+	text-align: left;
+	width: 118px;
+}
+.host {
+	text-align: right;
+}
+.country-team {
+	width: 150px;
+}
+.flag {
+	float: right;
+	margin-left: 4px;
+	margin-top: 4px;
+	width: 24px;
+	height: 18px;
+}
+.guest-team {
+	float: left;
+	margin-left: 0;
+	margin-right: 4px;
+}
+.bra{
+	background-image: url(Pictures/bra.jpg);
+}
+.mex {
+	background-image: url(Pictures/mex.jpg);
+}
+.esp {
+	background-image: url(Pictures/esp.png);
+}
+.nld {
+	background-image: url(Pictures/ndl.png);
+}
+.ita {
+	background-image: url(Pictures/ita.gif);
+}
+.eng {
+	background-image: url(Pictures/eng.png);
+}
+.arg {
+	background-image: url(Pictures/arg.jpg);
+}
+.bih {
+	background-image: url(Pictures/bih.png);
+}
+.deu {
+	background-image: url(Pictures/deu.png);
+}
+.prt {
+	background-image: url(Pictures/prt.jpg);
+}
