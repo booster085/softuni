@@ -1,0 +1,31 @@
+body {
+	font: 20px Verdana, sans-serif;
+	line-height: 1.7em;
+}
+table {
+	border: 1px solid black;
+	width: 560px;
+	white-space: nowrap;
+}
+	table tbody td {
+	padding-left: 5px;
+	}
+td, th {
+	border: 1px solid black;
+}
+#title {
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+.number {
+	width: 10%;
+}
+.name-col {
+	width: 35%;
+}
+.score {
+	width: 20%;
+}
+tfoot td {
+	text-align: right;
+}

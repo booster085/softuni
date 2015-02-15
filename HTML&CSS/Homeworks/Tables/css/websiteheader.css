@@ -1,0 +1,80 @@
+body {
+	color: white;
+	font: 12px Verdana, sans-serif;
+	text-transform: uppercase;
+}
+#main-table {
+	width: 1000px;
+	height: 80px;
+	background: #245882;
+	border-collapse: collapse;
+}
+.menu-row {
+	text-align: center;
+}
+.inner-table {
+	width: 100%;
+}
+#search-form {
+	border-radius: 5px;
+	display: inline-block;
+	position: absolute;
+}
+.search-input {
+	border-radius: 5px 0 0 5px;
+	height: 26px;
+	border: none;
+	background-color: white;
+	margin-top: 2px;
+	margin-left: 8px;
+	padding-left: 3px;
+}
+.button {
+	float: right;
+	margin-right: 4px;
+	width: 20px;
+	height: 28px;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	border-left: 1px solid gray;
+	background: white;
+	background-image: url(../pictures/search.png);
+	background-position: 0px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	margin-top: 2px;
+}
+.search-field {
+	width: 170px;
+	height: 20px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.user {
+	width: 80px;
+	text-align: right;
+}
+.bell {
+	padding-top: 10px;
+	text-align: right;
+	width: 400px;
+	vertical-align: middle;
+	line-height: 2.2em;
+}
+.bell-img {
+	position: relative;
+	float: right;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+.zero {
+	width: 20px;
+	position: relative;
+	float: right;
+	vertical-align: middle;
+}

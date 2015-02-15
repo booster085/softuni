@@ -1,0 +1,13 @@
+body {
+	font: 70px Verdana, sans-serif;
+}
+table, td {
+	border: 1px solid black;
+}
+	td {
+		padding: 10px;
+		margin: 10px;
+	}
+	td.logo {
+		padding-top: 20px;
+	}

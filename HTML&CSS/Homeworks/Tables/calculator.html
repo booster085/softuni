@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="css/calculator.css" type="text/css">
+	</head>
+	<body>
+	<form name="calculator">
+		<table id="main-table">
+			<thead>
+				<tr>
+					<td id="screen "colspan="4">
+						<input type="text" name="ans">
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+					</td>
+					<td>
+						<input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+					</td>
+					<td>
+						<input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+					</td>
+					<td>
+						<input type="button" value="+" onclick="document.calculator.ans.value+='+'">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+					</td>
+					<td>
+						<input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+					</td>
+					<td>
+						<input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+					</td>
+					<td>
+						<input type="button" value="-" onclick="document.calculator.ans.value+='-'">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+					</td>
+					<td>
+						<input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+					</td>
+					<td>
+						<input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+					</td>
+					<td>
+						<input type="button" value="*" onclick="document.calculator.ans.value+='*'">
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+						<input type="button" value="C" onclick="document.calculator.ans.value=''">
+					</td>
+					<td>
+						<input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+					</td>
+					<td>
+						<input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+					</td>
+					<td>
+						<input type="button" value="/" onclick="document.calculator.ans.value+='/'">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+	</body>
+</html>

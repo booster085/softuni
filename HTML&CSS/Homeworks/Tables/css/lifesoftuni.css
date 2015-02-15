@@ -1,0 +1,44 @@
+body>table {
+	padding: 0;
+	margin-left: 50px;
+	font: 15px Verdana, sans-serif;
+}
+
+table, td{
+	border: 1px solid black;
+}
+thead td {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+td {
+	width: 90px;
+	height: 90px;
+	padding: 4px;
+}
+#nested-table td {
+	height: 40px;
+}
+#nested-table {
+	font-size: 0.6em;
+	font-weight: bold;
+}
+.top {
+	vertical-align: top;
+}
+.bottom {
+	vertical-align: bottom;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.beer {
+	font-size: 1.3em;
+}
