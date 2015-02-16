@@ -42,8 +42,7 @@
 	background-color: red;
 	position: relative;
 	top: 40%;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-left: 170px;
 }
 .mouth {
 	width: 200px;
@@ -53,8 +52,7 @@
 	border-radius: 40px;
 	position: relative;
 	top: 45%;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-left: 100px;
 }
 .tooth {
 	position: absolute;
