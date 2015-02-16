@@ -17,7 +17,6 @@ body {
 }
 #search-form {
 	border-radius: 5px;
-	display: inline-block;
 	position: absolute;
 }
 .search-input {
