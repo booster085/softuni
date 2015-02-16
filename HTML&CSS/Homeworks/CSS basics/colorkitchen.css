@@ -11,6 +11,7 @@ body>header {
 	background: -webkit-linear-gradient(left, red, red 33%, green 33%, green 67%, blue 67%, blue);
 	background: -moz-linear-gradient(left, red, red 33%, green 33%, green 67%, blue 67%, blue);
 	background: linear-gradient(left, red, red 33%, green 33%, green 67%, blue 67%, blue);
+	/*Gradient does not work in IE11, I didn't find working solution*/
 	height: 100px;
 	margin-bottom: 20px;
 	font-weight: bold;
