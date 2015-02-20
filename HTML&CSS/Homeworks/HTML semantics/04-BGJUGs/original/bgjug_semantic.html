@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>BGJUG semantic</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 20px auto;
+            font: 17px Tahoma, sans-serif;
+        }
+        header {
+            width: 100%;
+            margin: 20px auto;
+            border-bottom: 1px solid #EEE;
+        }
+        h1 {
+            font-weight: normal;
+            padding-left: 4%;
+        }
+        ul {
+            width: 50%;
+            list-style-type: none;
+            padding-left: 2%;
+            margin-top: 7%;
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+        }
+        li > a {
+            color: #999;
+        }
+        ul li {
+            display: inline-block;
+            text-transform: uppercase;
+            margin-right: 100px;
+        }
+        #search-form {
+            width: 19%;
+            float: right;
+            margin-top: 7%;
+        }
+        .text-input {
+            margin: 0;
+            padding: 5px 5px;
+            border: 1px solid #CCC;
+            border-right: 0;
+            background-color: #fff;
+        }
+        .search-btn {
+            margin: 0;
+            margin-left: -7px;
+            width: 5%;
+            padding: 5px 15px;
+            border: 1px solid #CCC;
+            border-left: 0;
+            background: url(pictures/search.png) 5px 3px no-repeat;
+            background-color: #fff;
+            text-indent: -999px;
+        }
+        .search-btn::-moz-focus-inner {
+            border: 0;
+        }
+        nav {
+            width: 18%;
+            border-top: 2px solid #EEE;
+            padding-top: 10px;
+            padding-right: 20px;
+            float: left;
+            margin-top: 5%;
+        }
+        nav > a, section a {
+            display: block;
+            text-decoration: none;
+            color: #37719F;
+            margin-bottom: 0.5em;
+            line-height: 1.5em;
+        }
+        section {
+            width: 40%;
+            line-height: 1.5em;
+            padding: 10px;
+            margin-left: 6%;
+            float: left;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        article > p.comment-line {
+            margin-top: 8px;
+            color: #BBB;
+            font-size: 14px;
+        }
+        article span, time {
+            text-transform: uppercase;
+            color: #999;
+        }
+        time::after {
+            content: ' · ';
+        }
+        .monospaced {
+            letter-spacing: 2px;
+        }
+        .underlined {
+            border-bottom: 2px solid #EEE;
+        }
+        section > span > a{
+            border-top: 2px solid #EEE;
+            padding-top: 50px;
+            margin-top: 30px;
+            display: block;
+        }
+        aside {
+            width: 12%;
+            float: right;
+            margin-top: 2%;
+        }
+        aside > span {
+            display: block;
+            color: #BBB;
+            text-transform: uppercase;
+            border-bottom: 2px solid #EEE;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        aside > select {
+            font-size: 1.1em;
+            font-weight: 200;
+            padding-right: 10px;
+        }
+        #main-footer {
+            width: 100%;
+            position: relative;
+        }
+        #main-footer > header {
+            background-color: #F5F5F5;
+            width: 100%;
+            height: 50px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        #main-footer > header > span {
+            font-style: italic;
+            display: inline-block;
+            color: #999;
+            padding-left: 40px;
+        }
+        #main-footer > header > span {
+            background: url(pictures/twitter.png) no-repeat 0 -5px;
+        }
+        #main-footer footer {
+            width: 100%;
+            background-color: #000000;
+            min-height: 230px;
+            color: white;
+            position: relative;
+            padding: 0px;
+            display: inline-block;
+        }
+        footer h2 {
+            font-weight: normal;
+            margin-top: 0;
+        }
+        #main-footer footer article {
+            float: left;
+            width: 16%;
+            margin: 25px 15px;
+        }
+        #main-footer footer article:first-child {
+            margin-left: 40px;
+        }
+        #main-footer article span {
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        #main-footer > article > ul {
+            list-style-type: none;
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+        footer article p {
+            margin-top: 0;
+            color: #999;
+        }
+        #main-footer > footer a {
+            color: white;
+            font-size: 19px;
+            text-decoration: none;
+        }
+        .copyrights {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>BGJUG - Bulgarian Java User Group</h1>
+            <ul>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">event</a>
+                </li>
+                <li>
+                    <a href="#">contacts</a>
+                </li>
+            </ul>
+            <form id="search-form" method="GET">
+                <input class="text-input" type="text" autocomplete="off" maxlength="100" placeholder="Search">
+                <input class="search-btn" type="submit">
+            </form>
+        </header>
+        <nav>
+            <a href="#">An Architecture for E-Voting</a>
+            <a href="#">Integration Tests for External Services</a>
+            <a href="#">Algorithmic Music Influenced by Tweets</a>
+            <a href="#">The Low Quality of Scientific Code</a>
+            <a href="#">Development "Methodologies"</a>
+        </nav>
+        <section>
+            <article>
+                <h1 id="e-voting">An Architecture for E-Voting</h1>
+                <p class="comment-line">by
+                    <span class="monospaced underlined">bozho</span>
+                    on
+                    <time datetime="2014-05-27">may <span class="monospaced">27, 2014</span></time>
+                    <span class="monospaced underlined">leave a comment</span>
+                </p>
+                <p>E-voting is a hot topic in my country, and has been discussed a lot everywhere. Since we are already using the internet ant touch screen technologies in our everyday lives, why not apply that to voting? And not for the sake of technology itself, but in order to prevent technical mistakes and election fraud, and make[...]</p>
+                <a href="#">Continue Reading &#x2192;</a>
+            </article>
+            <article>
+                <h1>The Optional Type API</h1>
+                <p class="comment-line">by
+                    <span class="monospaced underlined">bozho</span>
+                    on
+                    <time datetime="2014-03-19">march <span class="monospaced">19, 2014</span></time>
+                    <span class="monospaced underlined">leave a comment</span>
+                </p>
+                <p>Java 8 intriduces the Optional class. In a nutshell, instead of returning null, and then checking for null, you return an Optional instance, which can either have or not have a value set. That way you don't fail with NullPointerException. I won't discuss whether the Optional type will eliminate NPEs completely (it won't). Instead I'll[...]</p>
+                <a href="#">Continue Reading &#x2192;</a>
+            </article>
+            <span><a href="#">&#x2190; Previous Entries</a></span>
+        </section>
+        <aside>
+            <span>language</span>
+            <select>
+                <option value="bg">Bulgarian</option>
+                <option value="uk">English</option>
+                <option value="de">Deutsch</option>
+            </select>
+            <span class="monospaced">blogroll</span>
+        </aside>
+        <footer id="main-footer">
+            <header>
+                <span>Set your Twitter account name in your setting to use the TwitterBar Section.</span>
+            </header>
+            <footer>
+                <article>
+                    <h2>BGJUG - Java Bulgarian User Group</h2>
+                </article>
+                <article>
+                    <span class="monospaced">pages</span>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <span class="monospaced">the latest</span>
+                    <a href="#e-voting">An Architecture for E-Voting</a>
+                    <p>E-voting is a hot topic in my country, and has been discussed[...]</p>
+                </article>
+                <article>
+                    <span class="monospaced">more</span>
+                    <p>Thanks for dropping by! Feel free to join the discussion by leaving comments, ant stay updated by subscribing the <a href="#">RSS feed</a>.</p>
+                </article>
+                <article>
+                    <p class="copyrights">&copy; 2011 BGJUG - Java Bulgarian User Group</p>
+                </article>
+            </footer>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font: 17px Tahoma, sans-serif;
+}
+.zoomed {
+    zoom: 0.6; -moz-transform: scale(0.6); -moz-transform-origin: 0 0;
+}
+aside {
+    width: 12%;
+    float: left;
+}
+aside > span {
+    display: block;
+    color: #BBB;
+    text-transform: uppercase;
+    border-bottom: 2px solid #EEE;
+    padding-bottom: 4px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.monospaced {
+    letter-spacing: 2px;
+}
+aside > select {
+    font-size: 1.1em;
+    font-weight: 200;
+    padding-right: 10px;
+}

@@ -1,0 +1,20 @@
+body {
+    font: 17px Tahoma, sans-serif;
+}
+#nav {
+    width: 190px;
+    border-top: 2px solid #EEE;
+    padding-top: 10px;
+    padding-right: 20px;
+    float: right;
+}
+.zoomed {
+    zoom: 0.6; -moz-transform: scale(0.6); -moz-transform-origin: 0 0;
+}
+#nav > a {
+    display: block;
+    text-decoration: none;
+    color: #37719F;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}

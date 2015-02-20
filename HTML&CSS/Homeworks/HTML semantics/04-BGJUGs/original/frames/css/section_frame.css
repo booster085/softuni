@@ -1,0 +1,48 @@
+body {
+    font: 17px Tahoma, sans-serif;
+}
+.zoomed {
+    zoom: 0.6; -moz-transform: scale(0.6); -moz-transform-origin: 0 0;
+}
+section {
+    width: 40%;
+    line-height: 1.5em;
+    padding: 10px;
+    margin-left: 300px;
+}
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+article > p.comment-line {
+    margin-top: 8px;
+    color: #BBB;
+    font-size: 14px;
+}
+article span, time {
+    text-transform: uppercase;
+    color: #999;
+}
+time::after {
+    content: ' · ';
+}
+.monospaced {
+    letter-spacing: 2px;
+}
+.underlined {
+    border-bottom: 2px solid #EEE;
+}
+section a {
+    display: block;
+    text-decoration: none;
+    color: #37719F;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+section > span > a{
+    border-top: 2px solid #EEE;
+    padding-top: 50px;
+    margin-top: 30px;
+    display: block;
+}

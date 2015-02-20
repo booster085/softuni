@@ -1,0 +1,70 @@
+body {
+    font: 17px Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.zoomed {
+    zoom: 0.6; -moz-transform: scale(0.6); -moz-transform-origin: 0 0;
+}
+#big-footer, #footer {
+    width: 80%;
+    margin: auto;
+}
+#big-footer > #header {
+    background-color: #F5F5F5;
+    padding: 20px;
+    padding-left: 40px;
+}
+#big-footer > #header > span {
+    font-style: italic;
+    color: #999;
+    padding-left: 40px;
+}
+#big-footer > #header > span {
+    background: url(../../pictures/twitter.png) no-repeat 0 -5px;
+}
+#big-footer #footer {
+    width: 100%;
+    background-color: #000000;
+    min-height: 230px;
+    color: white;
+    position: relative;
+    padding: 0px;
+}
+#big-footer h2 {
+    font-weight: normal;
+    margin-top: 0;
+}
+#big-footer #footer div {
+    float: left;
+    width: 16%;
+    margin: 25px 15px;
+}
+#big-footer #footer div:first-child {
+    margin-left: 40px;
+}
+div span {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.monospaced {
+    letter-spacing: 2px;
+}
+#big-footer > div > ul {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+#big-footer div p {
+    margin-top: 0;
+    color: #999;
+}
+#big-footer > #footer a {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+.copyrights {
+    margin-top: 0;
+}
