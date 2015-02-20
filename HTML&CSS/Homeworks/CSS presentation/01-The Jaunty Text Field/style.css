@@ -1,0 +1,78 @@
+main {
+    width: 530px;
+    height: 200px;
+    margin: 100px;
+    font: 16px Tahoma, Arial, sans-serif;
+    border-top: 5px dotted yellow;
+    border-left: 5px dashed red;
+    border-bottom: 6px double blue;
+    border-right: 10px solid green;
+    position: relative;
+}
+main > p {
+    display: block;
+    font: 2.4em Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    text-shadow: 10px 10px 10px #bbb;
+}
+section {
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid red;
+    border-radius: 60px;
+    text-align: center;
+    box-shadow: 0 0 0 2px yellow,
+    0 0 0 4px green,
+    0 0 0 6px blue;
+}
+section > p {
+    text-align: center;
+}
+section > article {
+    background-color: rgb(214, 146, 26);
+    width: 140px;
+    padding:0 10px;
+    text-align: center;
+    border: 3px outset rgb(255, 166, 0);
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.bubble {
+    background-color: #aaa;
+    color: #fff;
+    position: absolute;
+    border: 2px dashed #fff;
+    box-shadow: 0 0 0 4px #aaa;
+    opacity: 0.8;
+}
+article > div:nth-child(1) {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    bottom: 60px;
+    left: 410px;
+}
+article > div:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 93px;
+    left: 456px;
+}
+article > div:nth-child(3) {
+    width: 100px;
+    height: 55px;
+    border-radius: 50px;
+    bottom: 113px;
+    left: 493px;
+    text-align: center;
+}
+article > div > span {
+    display: block;
+    font: bold 17px Tahoma;
+    margin-top: 5px;
+}
