@@ -1,56 +1,78 @@
-@font-face {
-    font-family: "Animated";
-    src: url(font/Animated.ttf);
-}
-
-section {
-    position: relative;
-    width: 900px;
-    min-height: 600px;
+main {
+    width: 530px;
+    height: 200px;
     margin: 100px;
-    color: #FDBC21;
-    background: rgb(255,255,255); /* Old browsers */
-    background: url(pictures/HawaiiBackground.png) no-repeat, -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(255,252,188,1) 15%, rgba(255,255,255,1) 27%, rgba(0,103,219,1) 71%) no-repeat -278px -169px, rgb(0,103,219); /* FF3.6+ */
-    background: url(pictures/HawaiiBackground.png) no-repeat, -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 6%,rgba(255,252,188,1) 18%,rgba(255,255,255,1) 27%,rgba(0,103,219,1) 71%) no-repeat -278px -169px, rgb(0,103,219); /* Chrome10+,Safari5.1+ */
-    background: url(pictures/HawaiiBackground.png) no-repeat, -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 7%,rgba(255,252,188,1) 15%,rgba(255,255,255,1) 27%,rgba(0,103,219,1) 71%) no-repeat -278px -169px, rgb(0,103,219); /* Opera 12+ */
-    background: url(pictures/HawaiiBackground.png) no-repeat, -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 7%,rgba(255,252,188,1) 15%,rgba(255,255,255,1) 27%,rgba(0,103,219,1) 71%) no-repeat -278px -169px, rgb(0,103,219); /* IE10+ */
-    background: url(pictures/HawaiiBackground.png) no-repeat, radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 7%,rgba(255,252,188,1) 15%,rgba(255,255,255,1) 27%,rgba(0,103,219,1) 71%) no-repeat -278px -169px, rgb(0,103,219); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0067db',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    font: 16px Tahoma, Arial, sans-serif;
+    border-top: 5px dotted yellow;
+    border-left: 5px dashed red;
+    border-bottom: 6px double blue;
+    border-right: 10px solid green;
+    position: relative;
 }
-section > span {
+main > p {
     display: block;
-    font: 46px Animated, Tahoma, sans-serif;
-    float: right;
-    margin: 15px;
-    margin-right: 20px;
-
+    font: 2.4em Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    text-shadow: 10px 10px 10px #bbb;
 }
-section > img {
+section {
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid red;
+    border-radius: 60px;
+    text-align: center;
+    box-shadow: 0 0 0 2px yellow,
+    0 0 0 4px green,
+    0 0 0 6px blue;
+}
+section > p {
+    text-align: center;
+}
+section > article {
+    background-color: rgb(214, 146, 26);
+    width: 140px;
+    padding:0 10px;
+    text-align: center;
+    border: 3px outset rgb(255, 166, 0);
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.bubble {
+    background-color: #aaa;
+    color: #fff;
     position: absolute;
+    border: 2px dashed #fff;
+    box-shadow: 0 0 0 4px #aaa;
+    opacity: 0.8;
 }
-.vlado-g {
-    bottom: 28px;
-    left: 42px;
+article > div:nth-child(1) {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    bottom: 60px;
+    left: 410px;
 }
-.petia {
-    bottom: 34px;
-    left: 182px;
+article > div:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 93px;
+    left: 456px;
 }
-.tedi {
-    bottom: 18px;
-    left: 262px;
+article > div:nth-child(3) {
+    width: 100px;
+    height: 55px;
+    border-radius: 50px;
+    bottom: 113px;
+    left: 493px;
+    text-align: center;
 }
-.nakov {
-    bottom: 43px;
-    left: 412px;
-}
-.alex {
-    bottom: 23px;
-    left: 492px;
-}
-
-.vlado-k {
-    bottom: 18px;
-    left: 672px;
+article > div > span {
+    display: block;
+    font: bold 17px Tahoma;
+    margin-top: 5px;
 }
