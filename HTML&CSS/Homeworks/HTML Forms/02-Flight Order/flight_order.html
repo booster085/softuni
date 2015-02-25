@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flight Order</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>flight order</h1>
+    </header>
+    <main>
+        <div class="left-div">
+            <fieldset>
+                <legend>From</legend>
+                <select>
+                    <option value="sofia">Sofia</option>
+                    <option value="paris">Paris</option>
+                    <option value="london">London</option>
+                    <option value="ny">New York</option>
+                    <option value="moscow">Moscow</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Departure date</legend>
+                <input type="date" name="departure-date" class="date"/>
+            </fieldset>
+            <fieldset>
+                <legend>Return date</legend>
+                <input type="date" name="return-date" class="date"/>
+            </fieldset>
+            <fieldset class="age-field">
+                <div>
+                    <legend>12+</legend>
+                    <input type="number" class="age"/>
+                </div>
+                <div>
+                    <legend>2-12</legend>
+                    <input type="number" class="age"/>
+                </div>
+                <div>
+                    <legend>0-2</legend>
+                    <input type="number" class="age"/>
+                </div>
+            </fieldset>
+        </div>
+        <div class="right-div">
+            <fieldset>
+                <legend>To</legend>
+                <select>
+                    <option value="paris">Paris</option>
+                    <option value="sofia">Sofia</option>
+                    <option value="london">London</option>
+                    <option value="ny">New York</option>
+                    <option value="moscow">Moscow</option>
+                </select>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="directs" value="yes"/><span>Prefer directs</span>
+            </div>
+            <fieldset>
+                <legend>Time interval</legend>
+                <input type="time" name="departure-date" class="time"/>
+                <input type="time" name="departure-date" class="time"/>
+            </fieldset>
+            <fieldset>
+                <legend>Time interval</legend>
+                <input type="time" name="departure-date" class="time"/>
+                <input type="time" name="departure-date" class="time"/>
+            </fieldset>
+            <fieldset>
+                <legend>Choose class</legend>
+                <select>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First class</option>
+                </select>
+            </fieldset>
+            <fieldset class="search-btn">
+                <input type="button" value="Search">
+            </fieldset>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

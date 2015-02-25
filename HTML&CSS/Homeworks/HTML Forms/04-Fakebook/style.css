@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1400px;
+    background: #425f9c;
+    color: white;
+    font: bold 20px Tahoma, Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+}
+header {
+    text-align: center;
+}
+header > h1 {
+    line-height: 0.9em;
+    font-size: 8em;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+header > h3 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+header > h6 {
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+main > form > section {
+    display: inline-block;
+    vertical-align: top;
+}
+.none-important-info {
+    width: 39%;
+}
+.important-info {
+    width: 57%;
+}
+main > form > section:first-child {
+    margin-right: 40px;
+}
+section > article > fieldset {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 340px;
+}
+section > article > fieldset > legend {
+    text-align: center;
+}
+fieldset > input, select, textarea {
+    margin: 5px 0 5px 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 40px;
+    border: none;
+    box-shadow: inset 0 2px 2px #444;
+}
+fieldset > input:focus, select:focus {
+    outline: none ;
+}
+fieldset > input[type=datetime-local] {
+    width: 70%;
+    height: 20px;
+    padding: 10px 0;
+    display: block;
+}
+fieldset > input[type=radio] {
+    height: 13px;
+    box-shadow: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+fieldset > input[type=radio] + label {
+    display: inline-block;
+    margin-right: 15px;
+}
+.input-medium-size {
+    width: 240px;
+}
+.input-small-size {
+    width: 116px;
+}
+fieldset > label {
+    font-size: 0.8em;
+    display: block;
+    margin: 2px 0 2px 5px;
+}
+#door-color {
+    vertical-align: top;
+    width: 238px;
+}
+.important-info textarea {
+    width: 744px;
+    height: 100px;
+}
+.btn {
+    color: #425f9c;
+    height: 70px;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 1.5em;
+    border-radius: 10px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.btn:hover {
+    cursor: pointer;
+    font-size: 2em;
+}

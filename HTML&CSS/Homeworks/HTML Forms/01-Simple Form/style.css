@@ -1,0 +1,96 @@
+.wrapper {
+    width: 820px;
+    font: 16px Tahoma, Arial, sans-serif;
+    background: #eee;
+    padding: 15px;
+    margin: 0;
+}
+header {
+    margin: 20px;
+}
+header > h1 {
+    color: #21517f;
+}
+main {
+    margin: 5px;
+}
+main > div {
+    width: 47%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 330px;
+    position: relative;
+    padding: 10px;
+}
+main .register {
+    padding-right: 0;
+}
+main > div > h3 {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+main > div > h3 > span {
+    color: #21517f;
+}
+main > div > form {
+    width: 95%;
+    margin:0 auto;
+}
+main > div > form > input {
+    display: block;
+    width: 99%;
+    height: 40px;
+    text-indent: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.register .submit-btn {
+    width: 40%;
+    border: 2px solid #21517f;
+    font-weight: bold;
+    color: #21517f;
+    height: 40px;
+    margin-left: 218px;
+    background: #eee;
+}
+.login {
+    background: #21517f;
+    margin-left: 5px;
+    height: 301px;
+    color: white;
+}
+.login > form > div > input {
+    display: inline-block;
+}
+.login > form > div > input:first-child {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin: 0 3px 0 0;
+}
+.login-btn {
+    width: 35%;
+    border: 2px solid orange;
+    font-weight: bold;
+    background: #21517f;
+    height: 40px;
+    margin-left: 95px;
+    vertical-align: top;
+    color: white;
+    font-size: 1em;
+}
+.login-btn:hover, .submit-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.forgot-pass {
+    text-align: right;
+}
+.forgot-pass > a {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 0.9em;
+}

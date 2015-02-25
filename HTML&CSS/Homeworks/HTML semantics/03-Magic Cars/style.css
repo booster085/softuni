@@ -19,15 +19,16 @@ h1 {
     text-align: center;
 }
 section {
+	padding: 0;
     width: 500px;
     float: left;
+	overflow: hidden;
 }
 iframe {
     display: block;
     width: 480px;
     height: 360px;
     border: 2px solid #FFC90E;
-
 }
 iframe::-webkit-scrollbar {
     display: none;

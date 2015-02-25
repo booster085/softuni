@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 864px;
+    border: 1px solid gray;
+    font: 16px Tahoma, Arial, sans-serif;
+    color: #375184;
+    margin-left: 50px;
+
+}
+main {
+    width: 70%;
+    display: inline-block;
+}
+main > h1 {
+    margin-left: 10px;
+    width: 50%;
+}
+main > section {
+    width: 100%;
+}
+section > a > article {
+    margin: 5px;
+    width: 28%;
+    border: 1px solid lightcyan;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px 3px 0 3px;
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(224, 255, 255, 0.2);
+
+}
+section > a > article > div > img {
+    width: 87%;
+}
+article > p {
+    margin: 0 0 5px 11px;
+    color: #375184;
+}
+article > p > span {
+    text-align: left;
+    display: block;
+}
+.laptop-model {
+    font-weight: bold;
+}
+.new {
+    width: 50px;
+    height: 50px;
+    background: url(pictures/novo.png) no-repeat 10px -2px;
+    background-size:  50px 50px;
+    position: absolute;
+}
+section > a > article .price {
+    margin: 5px 0 0 72px;
+    width: 60%;
+    line-height: 32px;
+    background: #375184;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+}
+.price > span{
+    display: block;
+}
+nav {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;
+    padding: 5px;
+}
+nav input {
+    display: block ;
+    width: 100%;
+}
+nav > form > article > label {
+    display: block;
+    margin-top: 10px;
+}
+nav .value-box {
+    margin: 5px auto;
+    display: inline-block;
+}
+nav .value-box > input {
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    color: #375184;
+    font-size: 1.1em;
+    border: none;
+}
+nav > form > article > span {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+.min-value {
+    float: left;
+}
+.max-value {
+    float: right;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #375184;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

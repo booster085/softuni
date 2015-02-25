@@ -1,0 +1,24 @@
+.wrapper {
+    width: 580px;
+    margin-left: 300px;
+    font: 23px Tahoma, Arial, sans-serif;
+}
+header > img {
+    width: 100%;
+}
+main > form > p > input{
+    height: 50px;
+    width: 384px;
+    font-size: 1.1em;
+}
+main > form > p {
+    margin: 30px 0 0 10px;
+    display: inline-block;
+}
+main > form .search-box {
+    width: 220px;
+}
+main > form .search-btn {
+    width: 50px;
+    vertical-align: middle;
+}

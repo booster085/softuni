@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Styling HTML Form </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+    <form method="post" action="#">
+        <p>Step 1: Your details</p>
+        <fieldset>
+            <div>
+                <label for="names">Name</label>
+                <input id="names" type="text" placeholder="First and last name" required="true">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@domain.com" required="true">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" placeholder="eg. +447500000000" required="true">
+            </div>
+        </fieldset>
+        <p>Step 2: Delivery address</p>
+        <fieldset>
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address" type="text" required="true"></textarea>
+            </div>
+            <div>
+                <label for="postcode">Post code</label>
+                <input id="postcode" type="text" required="true">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input id="country" type="text" required="true">
+            </div>
+        </fieldset>
+        <p>Step 3: Card details</p>
+        <fieldset>
+            <div class="radio-field">
+                <label class="main-radio-label">Card type</label>
+
+                <input id="visa" type="radio" name="card-type" value="visa">
+                <div class="visa logo-box"></div>
+                <label for="visa">VISA</label>
+
+                <input id="amex" type="radio" name="card-type" value="amex">
+                <div class="amex logo-box"></div>
+                <label for="amex">AmEx</label>
+
+                <input id="master" type="radio" name="card-type" value="master">
+                <div class="master logo-box"></div>
+                <label for="master">Mastercard</label>
+            </div>
+            <div>
+                <label for="card-number">Card number</label>
+                <input id="card-number" type="text" required="true">
+            </div>
+            <div>
+                <label for="security-code">Security code</label>
+                <input id="security-code" type="text" required="true">
+            </div>
+            <div>
+                <label for="card-name">Name on card</label>
+                <input id="card-name" type="text" required="true">
+            </div>
+        </fieldset>
+        <input type="submit" value="BUY IT!">
+    </form>
+</main>
+</body>
+</html>

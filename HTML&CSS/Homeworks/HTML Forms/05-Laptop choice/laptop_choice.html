@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Laptop Choice</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <h1>Apple's Laptops(6)</h1>
+            <section>
+                <a href="http://store.apple.com/us/buy-mac/macbook-air" target="_blank">
+                    <article>
+                        <p>
+                            <span class="laptop-model">Apple MacBook Air</span>
+                            <span>11.6 inch/1.3GHz Haswell</span>
+                        </p>
+
+                        <div><img src="pictures/macbook_air.jpg" alt="laptop image"/></div>
+                        <div class="price"><span>$1,729.00</span></div>
+                    </article>
+                </a>
+                <a href="http://kaldata.bg" target="_blank">
+                <article>
+                    <p>
+                        <span class="laptop-model">Apple MacBook Air</span>
+                        11.6 inch/1.4GHz Haswell
+                    </p>
+                    <div class="new"></div>
+                    <div><img src="pictures/macbook_air.jpg" alt="laptop image"/></div>
+                    <div class="price"><span>$1,825.00</span></div>
+                </article>
+                </a>
+                <a href="http://dir.bg" target="_blank">
+                <article>
+                    <p>
+                        <span class="laptop-model">Apple MacBook Air</span>
+                        13.3 inch/1.3GHz Haswell
+                    </p>
+                    <div><img src="pictures/macbook_air.jpg" alt="laptop image"/></div>
+                    <div class="price"><span>$1,919.00</span></div>
+                </article>
+                    </a>
+                <a href="http://youtube.com" target="_blank">
+                <article>
+                    <p>
+                        <span class="laptop-model">Apple MacBook Air</span>
+                        13.3 inch/1.4GHz Haswell
+                    </p>
+                    <div><img src="pictures/macbook_air.jpg" alt="laptop image"/></div>
+                    <div class="price"><span>$1,999.00</span></div>
+                </article>
+                    </a>
+                <a href="https://www.novmak.com/apple-macbookair" target="_blank">
+                <article>
+                    <p>
+                        <span class="laptop-model">Apple MacBook Air</span>
+                        11.6 inch/1.4GHz Haswell 256GB SSD
+                    </p>
+                    <div class="new"></div>
+                    <div><img src="pictures/macbook_air.jpg" alt="laptop image"/></div>
+                    <div class="price"><span>$2,119.00</span></div>
+                </article>
+                    </a>
+                <a href="http://store.apple.com/us/buy-mac/macbook-pro" target="_blank">
+                <article>
+                    <p>
+                        <span class="laptop-model">Apple MacBook Pro</span>
+                        13.3 inch/2.5GHz Ivy Bridge
+                    </p>
+                    <div><img src="pictures/macbook_pro.jpg" alt=""/></div>
+                    <div class="price"><span>$2,529.00</span></div>
+                </article>
+                    </a>
+            </section>
+        </main>
+        <nav>
+            <form method="get" action="#">
+                <article>
+                    <label>Price</label>
+                    <div class="value-box"><input type="text" id="price"/></div>
+                    <span class="min-value">1700</span>
+                    <span class="max-value">2600</span>
+                    <input type="range" min="1700" max="2600" step="10" onchange="updateTextInput(this.value, 'price');"/>
+                </article>
+                <article>
+                    <label>RAM</label>
+                    <div class="value-box"><input type="text" id="ram"/></div>
+                    <span class="min-value">2048</span>
+                    <span class="max-value">4096</span>
+                    <input type="range" min="2048" max="4096" step="128" onchange="updateTextInput(this.value, 'ram');"/>
+                </article>
+                <article>
+                    <label>Disk</label>
+                    <div class="value-box"><input type="text" id="disk"/></div>
+                    <span class="min-value">100GB</span>
+                    <span class="max-value">2000GB</span>
+                    <input type="range" min="100" max="2000" step="100" onchange="updateTextInput(this.value, 'disk');"/>
+                </article>
+                <article>
+                    <label>Display</label>
+                    <div class="value-box"><input type="text" id="disp"/></div>
+                    <span class="min-value">11.6</span>
+                    <span class="max-value">18.4</span>
+                    <input type="range" min="11.6" max="18.4" step="0.1" onchange="updateTextInput(this.value, 'disp');"/>
+                </article>
+                <article>
+                    <label>Weight</label>
+                    <div class="value-box"><input type="text" id="weight"/></div>
+                    <span class="min-value">1</span>
+                    <span class="max-value">6</span>
+                    <input type="range" min="1" max="6" step="1" onchange="updateTextInput(this.value, 'weight');"/>
+                </article>
+                <article>
+                    <label>Warranty</label>
+                    <div class="value-box"><input type="text" id="warranty"/></div>
+                    <span class="min-value">12 months</span>
+                    <span class="max-value">60 months</span>
+                    <input type="range" min="12" max="60" step="6" onchange="updateTextInput(this.value, 'warranty');"/>
+                </article>
+            </form>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
