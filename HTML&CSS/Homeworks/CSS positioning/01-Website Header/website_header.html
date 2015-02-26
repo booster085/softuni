@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Website Header</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font: 14px "PT Sans",Tahoma,sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            background: #234465;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .wrapper > header {
+            width: 80%;
+            margin: 0 auto;
+            color: white;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+
+        }
+        .visible-upper {
+            text-transform: uppercase;
+        }
+        nav {
+            width: 25%;
+            height: 65px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        header > nav > a {
+            background: url(pictures/logo%20transparant.png) no-repeat 0 0;
+            display: block;
+            width: 100%;
+            height: 65px;
+        }
+        header > nav > a > span {
+            display: none;
+        }
+        header > menu {
+            display: inline-block;
+        }
+        menu .searchBar {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        menu .login {
+            display: inline-block;
+
+        }
+        menu .user {
+            display: inline-block;
+            vertical-align: top;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .hidden-menu + ul {
+            display: none;
+            margin: 4px 0;
+            padding: 0;
+            position: absolute;
+            background: orange;
+        }
+        .hidden-menu:visited + ul {
+            display: inherit;
+        }
+
+        .caret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            vertical-align: middle;
+            border-top: 4px solid;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+        .alert {
+            background: url(pictures/notificationsIcon.png) no-repeat 0 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .alert:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="https://softuni.bg/" target="_blank">
+                    <span>Software University</span>
+                </a>
+            </nav>
+            <menu>
+                <div class="login-search">
+                    <div>
+                        <div class="login">
+                            <span>0</span>
+                            <span class="alert"></span>
+                        </div>
+                        <div class="user">
+                            <a href="#" class="visible-upper hidden-menu">user<strong class="caret"></strong></a>
+                            <ul>
+                                <li><a href="#">User profile</a></li>
+                                <li><a href="#">Edit profile</a></li>
+                                <li><a href="#">Certificates</a></li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="searchBar">
+                            <form action="#" method="post"><input type="text"/>
+                                <!--background-->
+                                <button></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="visible-upper">news</a>
+                    </li>
+                    <li>
+                        <a href="#" class="visible-upper hidden-menu">about the university<strong class="caret"></strong></a>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Diplomas</a></li>
+                            <li><a href="#">How to apply</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="visible-upper hidden-menu">training courses<strong class="caret"></strong></a>
+                        <ul>
+                            <li><a href="#">Web fundamentals(HTML/CSS) Feb 2015</a></li>
+                            <li><a href="#">Teamwork and Personal Skills January 2015</a></li>
+                            <li><a href="#">OOP January 2015</a></li>
+                            <li><a href="#">Databases February 2015</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="visible-upper">for companies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="visible-upper">forum</a>
+                    </li>
+                    <li>
+                        <a href="#" class="visible-upper">contacts</a>
+                    </li>
+                </ul>
+            </menu>
+        </header>
+    </div>
+</body>
+</html>
