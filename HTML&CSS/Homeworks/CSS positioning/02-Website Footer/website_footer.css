@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+footer {
+    width: 100%;
+    background: #234465;
+    padding: 20px;
+    color: white;
+}
+.container {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.container > article {
+    display: inline-block;
+    vertical-align: top;
+}
+.button-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 16%;
+    margin-top: 16px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.button, .button:visited {
+    display: block;
+    border: 2px solid #ff9c00;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    -webkit-transition: .5s;
+    -moz-tranzition: .5s;
+    -ms-tranzition: .5s;
+    tranzition: .5s;
+}
+.button:hover {
+    background: #ff9c00;
+}
+article h3 {
+    text-transform: uppercase;
+    color: #ff9c00;
+    line-height: 1.1;
+    font-size: 14px;
+}
+.list-box {
+    width: 17%;
+    margin-left: 10px;
+}
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+.list-box ul > li {
+    margin-bottom: 5px;
+}
+.social-group-icons {
+    margin-top: 20px;
+}
+.social-group-icons li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.learning-system-box {
+    width: 25%;
+}
+.twitter-icon {
+    background: url(pictures/twitter.png);
+    width: 28px;
+    height: 28px;
+}
+.facebook-icon {
+    background: url(pictures/facebook.png);
+    width: 28px;
+    height: 28px;
+}
+.gplus-icon {
+    background: url(pictures/googleplus.png);
+    width: 28px;
+    height: 28px;
+}
+.twitter-icon:hover, .gplus-icon:hover, .facebook-icon:hover {
+    opacity: 0.8;
+}
+.fb-like-box {
+    background: white;
+
+}
+
+
