@@ -1,0 +1,44 @@
+body {
+    font: 50px Trebuchet MS, Helvetica, sans-serif;
+    background-color:beige ;
+}
+#msg {
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+    color: dodgerblue;
+}
+main {
+    margin: 10px auto;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px solid darkorange;
+    text-align: center;
+    line-height: 150px;
+    font-size: 130px;
+    color: green;
+}
+section:hover {
+    cursor: pointer;
+}
+#s1, #s2, #s3 {
+    border-top: none;
+}
+#s7, #s8, #s9 {
+    border-bottom: none;
+}
+#s1, #s4, #s7 {
+    border-left: none;
+}
+#s3, #s6, #s9 {
+    border-right: none;
+}
