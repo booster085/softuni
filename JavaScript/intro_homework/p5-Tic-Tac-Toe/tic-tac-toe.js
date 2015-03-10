@@ -5,27 +5,32 @@ function startGame() {
     } else {
         document.turn = 'X';
     }
+    document.getElementById('msg').innerHTML = 'PLAY!';
     document.gameOver = null;
+    document.counter = 1;
 }
 function nextMove(box) {
     var i;
      if (box.innerHTML === '' && document.gameOver === null) {
         box.innerHTML = document.turn;
         changeTurn();
+        document.counter++;
     } else if (document.gameOver !== null) {
 // When game is over reset all box values and color and Main message
          for (i = 1; i <= 9; i++) {
              getBox(i).innerHTML = '';
              changeColor(i, 'green');
          }
-         document.gameOver = null;
-         document.getElementById('msg').innerHTML = 'PLAY!';
+         startGame();
      }
 }
 function changeTurn() {
     if (checkForWin(document.turn)) {
         document.getElementById('msg').innerHTML = "Player '" + document.turn + "' wins!";
         document.gameOver = document.turn;
+    } else if (document.counter === 9) {
+        document.getElementById('msg').innerHTML = 'Draw!';
+        document.gameOver = 'draw';
     } else if (document.turn === 'X') {
         document.turn = 'O';
     } else {
