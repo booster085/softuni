@@ -1,0 +1,128 @@
+body {
+    font: 16px Arial, Helvetica, sans-serif;
+    background: #F7F7F7;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+header > h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.forms-box {
+    width: 650px;
+    float: left;
+}
+fieldset {
+    border: 1px dashed #ccc;
+}
+legend {
+    color: #fff;
+    background: #666;
+    font-weight: bold;
+    padding: 8px 5px;
+    border: 2px solid #333;
+    margin-bottom: 10px;
+}
+fieldset label {
+    color: #666;
+    font-size: 20px;
+    padding: 14px 7px;
+    background: #ccc;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 150px;
+    text-align: left;
+}
+fieldset .frame {
+    vertical-align: top;
+    display: inline-block;
+    background: #E6E6E6;
+    height: 51px;
+    width: 450px;
+}
+fieldset input {
+    width: 350px;
+    font-size: 20px;
+    padding: 5px 25px;
+    border: 2px inset #D3D3D3;
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+fieldset input:hover {
+    cursor: pointer;
+}
+
+#username {
+    background: #fff url(images/username-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+#username:active, #username:hover {
+    background: #F7F5D2 url(images/username-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+#password {
+    background: #fff url(images/password-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+#password:active, #password:hover {
+    background: #F7F5D2 url(images/password-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+.icon {
+    background: #fff url(images/field-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+.icon:active, .icon:hover {
+    background: #F7F5D2 url(images/field-icon.png) 3px no-repeat;
+    background-size: 20px;
+}
+fieldset .white-box {
+    width: 450px;
+    border: 1px solid #ccc;
+    background: #fff;
+    height: 50px;
+    float:right;
+}
+.white-box input {
+    box-sizing: border-box;
+    color: #989070;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    padding: 0;
+    line-height: 30px;
+    border: 2px outset #fff;
+    position: relative;
+    left: 329px;
+}
+.white-box input:hover {
+    cursor: pointer;
+}
+form {
+    padding: 30px 0;
+}
+.login {
+    border-bottom: 1px dashed #ccc;
+}
+aside {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+    float: right;
+    margin-top: 49px;
+}
+aside h3 {
+    margin: 6px 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 24px;
+}
+aside p {
+    color: #666;
+}

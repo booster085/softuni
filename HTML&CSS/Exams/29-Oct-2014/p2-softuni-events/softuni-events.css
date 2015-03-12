@@ -1,0 +1,120 @@
+@font-face {
+    font-family: ThisNight;
+    src: url(fonts/ThisNight.ttf);
+}
+/*•	Header / top navigation font: ThisNight / Helvetica / sans-serif.*/
+/*•	Body / footer font: LDFComicSans/ Arial / sans-serif.*/
+/*•	Site content width: fixed @ 960px.*/
+/*•	Site header / footer width: fluid (fill the entire page width).*/
+
+@font-face {
+    font-family: LDFComicSans;
+    src: url(fonts/LDFComicSans.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px LDFComicSans, Arial, sans-serif;
+}
+header, footer {
+    width: 100%;
+    text-align: center;
+    background: #234465;
+}
+header > h1 {
+    font-family: ThisNight, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 8em;
+    line-height: 150%;
+    margin: 0;
+}
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+main > nav {
+    text-align: center;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+main > nav > ul li {
+    font-family: ThisNight, Helvetica, sans-serif;
+    color: #234465;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: 0 14px;
+}
+.events {
+    background: #234465;
+    color: #fff;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 7px;
+}
+section > article {
+    width: 450px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+    height: 378px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 10px #385674;
+}
+section > article > img {
+    max-width: 100%;
+}
+article > header > h3 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 72px;
+    margin: 0 0 10px 0;
+    text-shadow: 3px 3px 5px #C68519;
+}
+article > p {
+    margin: 3px 0;
+}
+article > span {
+    font-style: italic;
+}
+.main-footer {
+    color: #fff;
+}
+.main-footer > nav > ul {
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+}
+.main-footer > nav > ul li {
+    font-size: 24px;
+    padding: 5px 20px;
+    margin: 19px 14px;
+    font-weight: bold;
+
+}
+.main-footer > p {
+    display: block;
+    font-size: 14px;
+    width: 158px;
+    margin: 0 auto;
+    padding: 20px 0 100px 0;
+}
+.main-footer > p > span {
+    display: block;
+    width: 158px;
+}
+h1:hover, main > nav > ul > li:hover, .main-footer > p:hover {
+    color: #FF9C00;
+    cursor: pointer;
+}
+.main-footer > nav > ul li:hover {
+    background: #FF9C00;
+    cursor: pointer;
+    color: #234465;
+}

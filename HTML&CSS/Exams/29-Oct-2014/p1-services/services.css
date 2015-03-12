@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "OpenSansExtra";
+    src: url(fonts/OpenSans-ExtraBold.ttf);
+}
+body{
+    font: 16px OpenSansExtra, Helvetica, sans-serif;
+    color: #7F8287;
+    margin: 0;
+    padding:0;
+}
+h1 {
+    font-size: 56px;
+    color: #009288;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.line {
+    font-family: Helvetica, san-serif;
+    font-size: 31px;
+}
+h1, h4, .line {
+    text-shadow: 1px 1px 0 #fff;
+}
+main {
+    background: #F0F0E8;
+    text-align: center;
+    width: 920px;
+    margin: 0 auto;
+}
+p {
+    font-family: Helvetica, san-serif;
+    font-weight: normal;
+}
+section > article {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 217px;
+    margin: 20px 3px;
+    padding: 0 15px;
+    border-left: 10px solid #F0F0E8;;
+}
+section > article:hover {
+    background: #F6F6F5;
+    cursor: pointer;
+    border-left-color: #009288;
+}
+article > p {
+    font-size: 12px;
+    line-height: 24px;
+}

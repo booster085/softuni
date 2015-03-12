@@ -1,0 +1,154 @@
+/*o	Site content: Calibri, Arial, sans-serif; 12px.*/
+/*o	Header title (68px), Main article title (48px) and quote: http://fonts.googleapis.com/css?family=Oleo+Script*/
+/*o	Navigation font size: 18px;*/
+/*o	Subtitles font size: 26px;*/
+/*•	Site content: fixed width 1000px.*/
+@font-face {
+    font-family: Oleo;
+    src: url(http://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #50247D;
+}
+.wrapper {
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font: 12px Calibri, Arial, sans-serif;
+    background: #EAE7EE;
+}
+header {
+    background: url(images/orion-gas-and-star-bgr.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    border-bottom: 10px solid #34A4D4;
+}
+header h1 {
+    font: 68px Oleo;
+    margin: 0;
+    padding-top: 40px;
+    line-height: 50px;
+}
+header p {
+    font-size: 26px;
+    margin: 0;
+}
+nav ul {
+    padding: 0 0 15px 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+nav ul a li {
+    display: inline-block;
+    background: #fff;
+    color: #50247D;
+    padding: 12px 26px;
+    margin: 0 3px;
+}
+nav ul a li:hover {
+    background: #34A4D4;
+    color: #fff;
+}
+main {
+    background: #EAE7EE;
+    padding: 35px;
+    border-top: 10px solid #865AB3;
+    border-bottom: 10px solid #34A4D4;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+main > section {
+    background: #fff;
+    width: 450px;
+    color: #171D2B;
+    padding: 30px 30px 5px 30px;
+    box-sizing: border-box;
+
+}
+.read-more {
+    float: right;
+    background: #36A4D5;
+    color: #fff;
+    padding: 9px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    top: -30px;
+    right: -30px;
+}
+article > .read-more {
+    top: -160px;
+    right: 0;
+}
+.main-section h2 {
+    font: 48px Oleo;
+    margin: 0;
+    line-height: 40px;
+}
+.main-section h3 {
+    font-size: 26px;
+    margin: 0;
+}
+.main-section p {
+    font-size: 14px;
+}
+.article-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    background: transparent;
+}
+.article-box article {
+    width: 209px;
+    position: relative;
+    background: #fff;
+}
+article > img {
+    width: 100%;
+}
+h4 {
+    color: #37A7CF;
+    font-size: 16px;
+    padding-left: 15px;
+    margin: 3px 0 0 0;
+}
+article > p{
+    padding: 0 15px;
+    margin: 6px 0 10px 0;
+}
+.bold-italic {
+    font: 15px Oleo;
+}
+.wallpaper {
+    float: right;
+    background: #865AB3;
+    color: #FFFCFF;
+    padding: 9px 22px;
+    font-size: 14px;
+    position: relative;
+    bottom: -9px;
+    right: -30px;
+}
+.wallpaper {
+    cursor: pointer;
+}
+
+footer p {
+    color: #fff;
+    line-height: 30px;
+    padding-left: 15px;
+}
+.no-wrap {
+    white-space: nowrap ;
+}
+
+

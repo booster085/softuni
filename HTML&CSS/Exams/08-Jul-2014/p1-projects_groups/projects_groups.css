@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*Font: Verdana / Helvetica (size: 23px for the title, 15px for the subtitle, 14px for the items text).*/
+.wrapper {
+    margin: 10px;
+    border: 1px dotted #D6D6D6;
+    font: 14px Verdana, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 5px;
+}
+header {
+    border: 1px dotted #D6D6D6;
+    background: #E9F5FE;
+}
+header > h1 {
+    box-sizing: border-box;
+    color: #125675;
+    font-size: 23px;
+    padding: 8px 5px 12px;
+    margin: 0;
+}
+main > h2 {
+    font-size: 15px;
+    color: #2ABBF5;
+}
+section {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+article {
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    height: 100px;
+}
+article:hover {
+    background: #D0E0EC;
+}
+a {
+    text-decoration: none;
+}
+section article > p {
+    margin-top: 7px;
+}
+/*section:after {*/
+    /*content: "";*/
+    /*clear:both;*/
+    /*height: 0;*/
+    /*display: block;*/
+/*}*/

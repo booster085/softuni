@@ -1,0 +1,44 @@
+main {
+    width:37%;
+    margin: 0 auto;
+    font: 16px Helvetica, Tahoma, sans-serif;
+}
+main > section {
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+}
+.image {
+    border: 2px solid #3F3F3F;
+    margin-bottom: 3px;
+}
+.image img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.genre > p {
+    font-size: 12px;
+    color: #7D7875;
+    display: inline-block;
+}
+.title {
+    display: block;
+    height: 35px;
+}
+.title:hover {
+    color: #8F241D;
+}
+.genre > img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    border: 2px solid #838383;
+    padding: 3px 4px;
+    border-radius: 2px;
+
+}
+.genre > img:hover {
+    background: red;
+    cursor: pointer;
+}

@@ -1,0 +1,157 @@
+
+@font-face {
+    font-family: Patua;
+    font-style: normal;
+    font-weight: 400;
+    src: url(http://fonts.gstatic.com/s/patuaone/v6/yAXhog6uK3bd3OwBILv_SFtXRa8TVwTICgirnJhmVJw.woff2);
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    color: #666;
+    font: 14px Georgia;
+}
+header {
+    width: 564px;
+    margin: 0 auto;
+    text-align: center;
+}
+header > h1 {
+    padding-left: 50px;
+    margin-bottom: 0;
+    font: 45px Patua;
+    color: #444;
+    background: url(images/site-logo.png) 125px 3px no-repeat;
+    background-size: 48px;
+}
+header > h1:hover {
+    cursor: pointer;
+    color: #777;
+}
+header > h4 {
+    font: italic 12px Georgia;
+    margin: 5px;
+}
+nav > ul {
+    list-style-type: none;
+    border-top: 1px dashed #aaa;
+    border-bottom: 1px dashed #aaa;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 8px;
+    border-radius: 3px;
+    color: #999;
+    font-weight: bold;
+}
+nav > ul > li:hover {
+    background: #eee;
+    color: #666;
+    cursor: pointer;
+}
+nav > ul > li:nth-child(4):hover {
+    background: none;
+}
+.wrapper img {
+    margin:10px 0;
+}
+section {
+    width: 77%;
+    float:left;
+}
+.important-article {
+    width: 80%;
+    border-top: 1px dashed #aaa;
+    border-bottom: 1px dashed #aaa;
+    margin: 20px auto;
+    padding: 28px 0;
+    text-align: center;
+}
+.important-article h3 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0 0 14px 0;
+}
+.important-article p {
+    margin: 0;
+}
+.some-article {
+    padding: 10px 0;
+}
+.some-article h2 {
+    color: #000;
+    font-weight: normal;
+    font-size: 2.4em;
+}
+.some-article p {
+    color: #333;
+    font-size: 16px;
+}
+
+main:after {
+    content: "";
+    display: block;
+    clear:both;
+    height: 0;
+}
+aside {
+    width: 22%;
+    float:right;
+}
+aside > article {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px dashed #aaa;
+    background: #F9F9F9;
+}
+aside article h5 {
+    font-size: 15px;
+    margin: 20px 0 0 0;
+}
+aside article ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+aside article ul li {
+    padding: 1px 0;
+}
+aside article ul li a {
+    text-decoration: none;
+    color: #0066CC;
+    font-size: 14px;
+}
+
+aside article ul li a:hover {
+    text-decoration: underline;
+    color: #FF4B33;
+}
+
+input {
+    width: 110px;
+    border: 1px solid #ccc;
+    height: 22px;
+}
+article form button {
+    font-family: Arial;
+}
+footer {
+    margin-top: 20px;
+    min-width: 100%;
+    height: 50px;
+    background: #eee;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+footer p {
+    color: #666;
+    line-height: 50px;
+    margin: 0;
+}
+

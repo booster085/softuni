@@ -1,0 +1,70 @@
+/*width < 500px, 500px ≤ width < 700px and width ≥ 700px*/
+@media screen and (max-width: 699px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 29%;
+    }
+    .container {
+        width: 100%;
+    }
+    body.home .header {
+        padding-top: 5%;
+    }
+}
+@media screen and (max-width: 585px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 25%;
+    }
+
+    .header p {
+        margin-bottom: 4%;
+    }
+    body.home .header {
+        background: url(./cover.jpg) center no-repeat;
+        background-size: 130%;
+    }
+}
+@media screen and (max-width: 499px) {
+    .leader li {
+        display: block;
+    }
+    body.home .header {
+        background-position: 60% 35%;
+    }
+    body.home .header {
+        background: url(./cover.jpg) center no-repeat;
+        background-size: 200%;
+    }
+    .nav {
+        margin: 0 20%;
+    }
+    .nav a:link, .nav a:visited {
+        font-size: 1.3em;
+    }
+    .container {
+        padding: 5% 0;
+        font-size: 20px;
+    }
+    body > div.header > div > p {
+        font-size: 1.2em;
+    }
+    body > div.header > div > h1 {
+        font-size: 4em;
+    }
+    body.home li.home a {
+        font-size: 1.4em;
+    }
+    .container p {
+        font-size: 22px;
+    }
+    body > div.footer > p {
+        font-size: 20px;
+    }
+
+}
+

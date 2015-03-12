@@ -1,0 +1,122 @@
+
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+@font-face {
+    font-family: icons;
+    src: url(fonts/glyphicons-halflings-regular.ttf);
+}
+body {
+    font: 16px Arial, Helvetica, sans-serif;
+    background: url(images/background.png);
+}
+.wrapper {
+    width: 750px;
+    height: 320px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    background: #333;
+    padding: 20px;
+    color: #D7E5EE;
+}
+h1 {
+    text-align: center;
+    font-family: Lobster;
+    font-size: 28px;
+    background: #679966;
+    padding: 3px 0;
+    font-weight: normal;
+    margin-top: 0;
+}
+main > section {
+    box-sizing: border-box;
+    width: 350px;
+    height: 215px;
+    display: inline-block;
+    vertical-align: top;
+}
+.add-box {
+    background: #232323;
+}
+.fire:before {
+    font-family: icons;
+    content: "\e104";
+    font-size: 4em;
+    margin-left: 142px;
+    line-height: 100px;
+}
+.add-box ul {
+    list-style-type: none;
+    text-align: center;
+    padding:5px 0 0 0;
+    border-top: 1px solid #fff;
+    margin: 5px 0;
+}
+ul li {
+    margin-top: 10px;
+    font-size: 15px
+}
+ul li:before {
+    font-family: icons;
+    content: "\e089";
+    margin-right: 4px;
+}
+.login-box {
+    text-align: center;
+}
+.login-box h3 {
+    font-weight: normal;
+    margin: 0;
+}
+.login-box label {
+
+}
+.input-box {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 26px;
+    width: 90%;
+
+}
+.input-box label:before {
+    font-family: icons;
+    display: inline-block;
+    float: left;
+    background: #679966;
+    color: #555555;
+    content: "\e008";
+    line-height: 30px;
+    width: 30px;
+    height: 31px;
+    vertical-align: top;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pass label:before {
+    content: "\e135";
+}
+
+.input-box input {
+    width: 278px;
+    padding-left: 5px;
+    height: 26px;
+    border: 2px solid #ccc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+}
+.submit {
+    height: 30px;
+    border: none;
+    color: #D7E5EE;
+    background: #232323;
+    border-radius: 3px;
+}
+.submit:hover {
+    cursor: pointer;
+    background: #679966;
+}
+.submit:focus {
+    border-color: #66AFE9;
+}
+
+

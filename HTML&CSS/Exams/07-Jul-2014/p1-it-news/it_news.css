@@ -1,0 +1,42 @@
+/*•	Font: Verdana / Arial / Helvetica size: 13px dates 10px*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 13px Verdana, Arial, Helvetica;
+}
+.wrapper {
+    width: 611px;
+    margin: 50px auto;
+}
+article {
+    box-sizing: border-box;
+    width: 280px;
+    margin: 5px;
+    padding: 7px;
+    float:left;
+    border: 1px solid #CBCBCB;
+    box-shadow: 2px 2px 5px #CBCBCB;
+}
+article h1 {
+    font-size: 13px;
+    margin:0;
+}
+h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+article time {
+    font-size: 10px;
+    display: block;
+}
+article img {
+    float: left;
+    width: 28%;
+    margin: 3px 3px 2px 0;
+}
+article p {
+   margin: 0;
+    word-spacing: -1px;
+    letter-spacing: -0.2px;
+}

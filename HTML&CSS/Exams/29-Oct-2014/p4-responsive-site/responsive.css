@@ -1,0 +1,82 @@
+/*width < 540px, 540px ≤ width < 760px,
+ 760px ≤ width < 960px and width ≥ 960px*/
+
+@media screen and (max-width: 959px){
+    #container > header > nav {
+        float: none;
+        margin-left: 15%;
+    }
+    #content {
+        margin: 0 20px 0 0;
+    }
+    #sidebar {
+        width: 25%;
+    }
+    #sidebar #categories,#sidebar #social {
+        float: none;
+    }
+    #sidebar #search #searchbar {
+        width: 72%;
+    }
+    header nav li {
+        width: 128px;
+    }
+}
+@media screen and (max-width: 759px){
+    #container #content,#container #sidebar,#container header {
+        width: 80%;
+        margin:0 10%;
+    }
+    #container > header > h1 {
+        float:none;
+        margin-bottom: 40px;
+    }
+    #container > header > nav {
+        margin-left: 0;
+        text-align: left;
+    }
+    #container > header > nav > ul {
+        list-style-position: inside;
+
+    }
+    #container > header > nav > ul > li {
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 15px;
+        width: 90px;
+    }
+    #container > header {
+        margin-bottom: 80px;
+    }
+    #sidebar {
+        width: 75%;
+    }
+    #sidebar #categories, #sidebar #social {
+        float: left;
+    }
+    #search {
+        clear: both;
+    }
+    #sidebar #search #searchbar {
+        width: 85%;
+    }
+    #footer-container > footer {
+        width: auto;
+    }
+}
+@media screen and (max-width: 539px){
+    header nav li {
+       width: 100px;
+    }
+    #container > header > nav > ul > li:nth-child(3){
+        clear: both;
+        margin-right: 20px;
+    }
+    #latest {
+        clear:both;
+    }
+    #sidebar #social {
+        float:right;
+    }
+}

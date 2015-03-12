@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body{
+    background-color: #F3F3F5 ;
+    margin: 0;
+    padding: 0;
+}
+.fluid {
+    width: 100%;
+}
+.header {
+    background: url(images/bgr.jpg) repeat-x;
+}
+.footer {
+    background: #C9C7CC;
+}
+.faq {
+    background: rgba(93,93,93,0.9);
+    color: #fff;
+    position: absolute;
+    bottom: 12%;
+    right: 26%;
+}
+.faq > span {
+    font: 4.5em 'Lobster';
+    padding: 15px;
+    line-height: 113px;
+}
+.wrapper {
+    font: 16px Open-sans, sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main, header, footer {
+    width: 920px;
+    margin: 0 auto;
+}
+nav {
+    float: left;
+    width: 206px;
+}
+nav > img {
+    max-width: 100%;
+}
+nav > ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+nav > ul > li {
+    background: #4E5359;
+    height: 50px;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 50px;
+    border: 1px solid #50555B;
+    border-left: 5px solid #50555B;
+}
+nav > ul > li:hover {
+    border-left-color: #2F6D6C;
+    cursor: pointer;
+    background-color: #5D6167;  ;
+}
+nav > ul > li:active {
+    border-left-color: #22DBA5;
+    background-color: #42464B;
+}
+section {
+    float: right;
+    width: 696px;
+}
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+    height:0;
+}
+section > article {
+    background: #fff;
+    border-top: 3px solid #BBBABF;
+    padding: 10px;
+    margin: 16px 0;
+}
+section > article h3 {
+    color: #BBBABF;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 4px 0;
+}
+
+section > article p {
+    color: #BBBABF;
+    margin: 0;
+}
+section > article > h2 {
+    color: #0000EE;
+    margin: 8px 0;
+    font-size: 1.3em;
+}
+section > article h2:hover {
+    cursor: pointer;
+}
+footer {
+    height: 150px;
+}
+footer > span {
+    display: block;
+    margin-top: 20px;
+    padding-top: 30px;
+}

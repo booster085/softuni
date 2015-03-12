@@ -1,0 +1,107 @@
+
+body #wrapper header {
+    width: 100%;
+}
+body #wrapper main {
+    width: 100%;
+}
+body #wrapper main .section-main-info {
+    display: inline-block;
+    width: 71%;
+}
+body #wrapper main .section-secondary-info {
+    width: 27%;
+}
+body #wrapper main .section-main-info section img {
+    width: 360px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        background: #130707 url(../images/LogoBackground.png) center center no-repeat fixed;
+    }
+
+    body #wrapper header ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    body #wrapper header ul li {
+        margin: 0;
+    }
+
+    body #wrapper header ul #arkham-knight-logo {
+        display: none;
+    }
+
+    body #wrapper main .section-secondary-info {
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    body #wrapper main .section-secondary-info section {
+        display: inline-block;
+        vertical-align: top;
+        position: static;
+        width: 48%;
+        padding-right: 3px;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    body #wrapper header ul #right-padded {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    body #wrapper header ul li {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+    }
+    body #wrapper header ul li {
+        display: block;
+        border-bottom: 2px solid #FDFDFD;
+        width: 100%;
+    }
+    body #wrapper main .union section {
+        width: 100%;
+        text-align: center;
+    }
+    body #wrapper main .section-main-info {
+        width: 100%;
+    }
+    body #wrapper main .section-main-info section img {
+        width: 100%;
+    }
+    body #wrapper main .section-secondary-info section {
+        display: block;
+        width: 100%;
+    }
+    body #wrapper main .section-secondary-info section h3 {
+        text-align: center;
+    }
+    body #wrapper main .section-secondary-info header {
+        width: 100%;
+    }
+    body #wrapper main nav ul li {
+        margin: 0;
+        display: block;
+        font-size: 12px;
+    }
+    body #wrapper main nav ul {
+        list-style-type:  none;
+        padding: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    body #wrapper main nav ul li h2 {
+        text-decoration: underline;
+    }
+    body {
+        background: #130707;
+    }
+}

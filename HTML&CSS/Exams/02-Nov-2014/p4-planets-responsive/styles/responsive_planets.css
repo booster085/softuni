@@ -1,0 +1,92 @@
+/*width < 756px, 756px ≤ width < 1000px*/
+@media only screen and (max-width: 999px) {
+    body {
+        min-width: 0;
+        width: 100%;
+    }
+    #logoarea {
+        display: block;
+        float:none;
+        padding: 32px 5px 20px 35px;
+    }
+    #header-area-right {
+        max-width: 100%;
+        float: none;
+        display: block;
+        padding: 0;
+    }
+    #menu {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 350px;
+    }
+    #search-form {
+        display: block;
+        float: none;
+        margin: 15px auto;
+        padding: 7px 0 24px 10px;
+        width: 240px;
+    }
+    #wrapper {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        height: auto;
+    }
+    section.contentblock {
+        min-width: 0;
+    }
+    #publicphotos {
+        width: 100%;
+        padding-left: 0;
+    }
+    #publicphotos h1 {
+        text-align: center;
+    }
+    #p-albums-items {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .p-photos-block {
+        align-items: center;
+    }
+    footer {
+        min-width: 0;
+    }
+
+}
+@media only screen and (max-width: 755px) {
+    #wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    header {
+        height: 75%;
+    }
+    #menu {
+        width: 100%;
+    }
+    #nav-menu {
+    display: block;
+    text-align: center;
+        width: 100%;
+    }
+    #nav-menu li {
+        min-width: 100%;
+        margin: 4px 0;
+    }
+    #nav-menu li a {
+        box-sizing: border-box;
+        width: 90%;
+    }
+    #search-form {
+        width: 60%;
+    }
+    #p-albums-items {
+        width: 80%;
+    }
+}

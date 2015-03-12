@@ -1,0 +1,106 @@
+@font-face {
+    font-family: yano;
+    src: url(fonts/yanonekaffeesatz-regular-webfont.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/form-background.png);
+}
+.wrapper {
+    width: 530px;
+    margin: 0 auto;
+    font: 14px yano, Aril, sans-serif;
+    color: #7C7873;
+}
+header > h1 {
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 0 1px 1px #EDE8D9;
+}
+.letter {
+    width:450px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    background: url(images/letter-background.png);
+    box-shadow: 0 0 2px 1px #BAB6AE;
+    text-shadow: 0 1px 1px #fff;
+    position: relative;
+}
+.letter h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+}
+.letter label {
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    color: #B3ABA1;
+
+}
+input, textarea {
+    background: url(images/letter-background.png);
+    border: 1px solid #E3DCD1;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px #F8F5F1;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+input:focus, textarea:focus {
+    background: #F7F3EE;
+    outline: none;
+}
+input {
+    height: 40px;
+    margin-bottom: 20px;
+}
+textarea {
+    height: 100px;
+}
+.btn {
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+button {
+    background: transparent;
+    display: block;
+    color: #7C7873;
+    border: none;
+    font: 24px yano, Aril, sans-serif;
+    margin: 0 auto;
+    text-shadow: 0 1px 1px #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+button:hover {
+    cursor: pointer;
+    color: #435C70;
+    background: #BBC9CF;
+}
+.envelop-top {
+    position: absolute;
+    z-index: -3;
+    width: 530px;
+    height: 260px;
+    background-image: url(images/envelope-top.png);
+    top: 186px;
+    left: -40px;
+}
+.envelop-bottom {
+    position: absolute;
+    z-index: 1;
+    width: 530px;
+    height: 260px;
+    background-image: url(images/envelope-bottom.png);
+    top: 370px;
+    left: -40px;
+}
+
