@@ -6,13 +6,13 @@ function solve(arr){
         end = Number(arr[1]);
     for (i = start; i <= end; i++) {
             if(compareDigits(i)) {
-                output += "<li><span class='rakiya'>"+ i +'</span><a href="view.php?id=' + i + '">View</a></li>\n';
+                output += "<li><span class='rakiya'>"+ i +'</span><a href="view.php?id=' + i + '>View</a></li>\n';
             } else {
                 output += "<li><span class='num'>"+ i +"</span></li>\n"
             }
 
     }
-    output += '<ul>';
+    output += '</ul>';
     console.log(output);
     function compareDigits(number){
         var j, k, numberStr = String(number);
