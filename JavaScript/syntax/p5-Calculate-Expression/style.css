@@ -1,0 +1,22 @@
+body {
+    background: blanchedalmond;
+}
+section {
+    width: 400px;
+}
+input, textarea {
+    width: 100%;
+    background-color: royalblue;
+    color: orange;
+    height: 40px;
+    margin: 10px;
+    padding-left: 5px;
+    font-size: 28px;
+}
+button {
+    display: block;
+    background-color: #fff;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+}

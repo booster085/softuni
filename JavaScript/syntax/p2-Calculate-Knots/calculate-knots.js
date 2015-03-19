@@ -1,4 +1,4 @@
-//km/h to knots
+'use strict';
 function convertKmhToKnots(kmh){
     return (kmh * 0.539956803).toFixed(2);
 }
