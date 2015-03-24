@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="myCanvas" width="600" height="800"></canvas>
+<script>
+    var c = document.getElementById('myCanvas');
+    var ctx = c.getContext('2d');
+
+// Draw house base
+    var baseWidth = 450;
+    var baseHeight = 300;
+    ctx.rect(100, 300, baseWidth, baseHeight);
+    ctx.fillStyle = '#975b5b';
+    ctx.fill();
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    ctx.closePath();
+
+//House roof
+    ctx.beginPath();
+    ctx.moveTo(100, 298.5);
+    ctx.lineTo(100 + baseWidth/2, 50);
+    ctx.lineTo(100 + baseWidth, 298.5);
+    ctx.fillStyle = '#975b5b';
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+
+    //chimney
+
+    ctx.beginPath();
+    ctx.rect(430, 120, 40, 130);
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.rect(432, 246, 36, 8);
+    ctx.fill();
+    ctx.closePath();
+
+    //chimney top
+    ctx.scale(3, 1);
+    ctx.beginPath();
+    ctx.arc((430 + 40/2)/ 3, 120, 6.5, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 2;
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+    ctx.scale(1/3, 1);
+
+//house windows
+    ctx.beginPath();
+    ctx.rect(130, 330, 170, 100);
+    ctx.rect(350, 330, 170, 100);
+    ctx.rect(350, 460, 170, 100);
+    ctx.fillStyle = '#000';
+    ctx.fill();
+    ctx.closePath();
+//horizontal line up windows
+    ctx.beginPath();
+    ctx.moveTo(120, 380);
+    ctx.lineTo(540, 380);
+    ctx.strokeStyle = '#975b5b';
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    ctx.closePath();
+//horizontal line down window
+    ctx.beginPath();
+    ctx.moveTo(345, 510);
+    ctx.lineTo(540, 510);
+    ctx.stroke();
+    ctx.closePath();
+//vertical line left window
+    ctx.beginPath();
+    ctx.moveTo(215, 325);
+    ctx.lineTo(215, 430);
+    ctx.stroke();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.moveTo(435, 325);
+    ctx.lineTo(435, 560);
+    ctx.stroke();
+    ctx.closePath();
+
+
+
+
+
+
+</script>
+</body>
+</html>
