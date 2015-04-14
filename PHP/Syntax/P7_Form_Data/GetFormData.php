@@ -19,7 +19,7 @@
         <section class="radioBtn">
             <input type="radio" name="sex" id="female" value="female"/><label for="female">Female</label>
         </section>
-        <input type="submit"/>
+        <input type="submit" name="submit"/>
     </form>
 </main>
 <?php
@@ -31,9 +31,7 @@ function displayInfo()
     echo "<span>My name is $name. I am $age years old. I am $sex.</span>";
 }
 
-if (isset($_GET['name']) && $_GET['name'] !== "" &&
-    isset($_GET['age']) && $_GET['age'] !== ""
-) {
+if (isset($_GET['submit'])) {
     displayInfo();
 } else {
     echo "Please enter your details";
