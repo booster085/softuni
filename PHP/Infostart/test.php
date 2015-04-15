@@ -1,6 +1,20 @@
 <meta charset="utf-8">
 <?php
-$flappyBirdFile = "C:\Users\Azbe\Desktop\FlappyBird.txt";
-$text = "You are very lucky bastard. I'm proud of you";
-file_put_contents($flappyBirdFile, $text, FILE_APPEND);
+$a = array (
+    'pap' => 'a',
+    'vuii' => 'b',
+    'kurvi' => 'c',
+    'ceco' => 'd',
+    'iliikata' => 'e'
+);
+end($a);
+echo key($a) . "<br/>";
+reset($a);
+echo key($a);
+
+
+//for ($i=0; $i<$c; $i++) {
+//    $str .= $i . ' ' . $a[$i] . '<br/>'."\n";
+//}
+
 ?>
