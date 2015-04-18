@@ -1,0 +1,13 @@
+.wrapper {
+    width: 550px;
+}
+#personalInfo > input {
+    display: block;
+}
+fieldset>label {
+    display: block;
+}
+#workPosition > div {
+    display: block;
+
+}

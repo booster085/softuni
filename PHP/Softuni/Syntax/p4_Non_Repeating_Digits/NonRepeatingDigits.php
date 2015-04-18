@@ -5,7 +5,6 @@ $number = 199;
 printAllThreeDigitUniqueNumbers($number);
 
 function printAllThreeDigitUniqueNumbers($num){
-    $isFound = false;
     $result = [];
     $max = $num >= 1000 ? 987 : $num;
     if ($num > 102) {
@@ -15,12 +14,11 @@ function printAllThreeDigitUniqueNumbers($num){
                 $numAsStr[0] !== $numAsStr[2] &&
                 $numAsStr[1] !== $numAsStr[2]) {
                 $result[] = $i;
-                $isFound = true;
             }
         }
 
     }
-    if(!$isFound){
+    if(!$result){
         echo 'no';
     } else {
         echo implode(', ', $result);
