@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@welcome');
 
 Route::get('home', 'HomeController@index');
 
@@ -19,3 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::group(array('before' => 'guest'), function(){
+    Route::get('/user/create/', 'UserController@getCreate');
+    Route::get('user/login', 'UserController@getLogin');
+});
