@@ -2,22 +2,20 @@
 
 include 'connect.php';
 include 'header.php';
- 
-echo '<h3>Sign in</h3>';
- 
-if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
+
+if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true)
 {
     echo 'You are already signed in, you can <a href="logout.php">log out</a> if you want.';
 }
 else
 {
-    if($_SERVER['REQUEST_METHOD'] != 'POST')
-    {
+    if($_SERVER['REQUEST_METHOD'] != 'POST') {
+        echo '<h2>Log in</h2>';
         echo '<form method="post" action="">
-            Username: <input type="text" name="user_name" />
-            Password: <input type="password" name="user_pass">
-            <input type="submit" value="Sign in" />
-         </form>';
+                <label for="user_name">Username: </label><input type="text" name="user_name" />
+               <label for="user-pass">Password: </label><input type="password" id="password" name="user_pass">
+                <input type="submit" value="Log in" class="sub-btn"/>
+                </form>';
     }
     else
     {       
@@ -54,7 +52,8 @@ else
                     . "name='$username' AND password='$password'";
                                               
             $result = $conn->query($sql);
-            
+            //var_dump($_POST);
+
             if(!$result)
             {
                 echo 'Unsuccessful signing in.';
@@ -63,7 +62,7 @@ else
             {              
                 if($result->num_rows > 0)
                 {                   
-                    $_SESSION['signed_in'] = true;
+                    $_SESSION['logged_in'] = true;
                                          
                     while($row = $result->fetch_assoc())
                     {

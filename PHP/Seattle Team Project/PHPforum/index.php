@@ -1,4 +1,6 @@
-<?php
-include 'header.php';
-include 'footer.php';
+
+<?php    
+    include 'connect.php';
+    include 'header.php';   
+    include 'footer.php';
 ?>
