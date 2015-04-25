@@ -16,8 +16,12 @@ if (isset($_POST['search'])) {
 letter as the first character in our search field.
 Prevent from SQL injection
 */
-        if(preg_match("/^[A-Za-z]+/", $_POST['keywords'])) {
+
+        if(preg_match("/^[a-zA-Z\\p{Cyrillic}0-9\\s\\-]+$/u", $_POST['keywords'])) {
             $keywords = addslashes(htmlspecialchars(trim($_POST['keywords'])));
+            var_dump($keywords);
+            $conn->query("SET NAMES utf8");
+            $conn->query("SET COLLATION_CONNECTION=utf8_bin");
             $sql = "SELECT ".
                     "topic_subject, ".
                     "topic_description, ".
@@ -27,6 +31,7 @@ Prevent from SQL injection
                     "FROM topics ".
                     "WHERE topic_subject LIKE '%$keywords%' ".
                     "OR topic_description LIKE '%$keywords%'";
+
             $result = $conn->query($sql);
             $foundTopics = [];
 

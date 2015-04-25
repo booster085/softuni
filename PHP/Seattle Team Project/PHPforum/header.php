@@ -25,7 +25,7 @@
                 if(!isset($_SESSION['logged_in'])){
                      echo '<a href="login.php" class="item">Log in</a> ' . ' <a href="register.php" class="item">Register</a>';
                 } else {
-                    echo 'User: ' . $_SESSION['user_name'] . ' ' . '<a href="logout.php"><button class="item">Log out</button></a>';
+                    echo 'User: ' . $_SESSION['user_name'] . ' ' . '<a href="logout.php" class="item">Log out</a>';
                 }
                    
                 ?>

@@ -12,7 +12,7 @@ class CreateForumGroupsTable extends Migration {
 	 */
 	public function up()
 	{
-        Schema::crete('forum_groups', function (Blueprint $table){
+        Schema::create('forum_groups', function (Blueprint $table){
             $table->increments('id');
             $table->string('title');
             $table->integer('author_id');

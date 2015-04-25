@@ -21,8 +21,9 @@
         }
         else
         {           
-            echo '<div id="categories">'; 
-
+            echo '<div id="categories">';
+            $conn->query("SET NAMES utf8");
+            $conn->query("SET COLLATION_CONNECTION=utf8_bin");
             while($row = $result->fetch_assoc())
             {               
                 
@@ -45,15 +46,16 @@
                 
                 $resultTopics = $conn->query($sqlTopics);
                       
-                while($rowTopic = $resultTopics->fetch_assoc()){                    
-                    echo '<div class="topic-heading"><a href="#">' . 
+                while($rowTopic = $resultTopics->fetch_assoc()){    
+                    //var_dump($rowTopic);
+                    echo '<div class="topic-heading"><a href="posts_view.php?id=' . $rowTopic['id'] . '">' . 
                             $rowTopic['topic_subject'] . '</a><div class="topic-creation">created:' . 
                             $rowTopic['topic_date'] . '</div></div>';
 
                 }
                 echo '</div>';                               
             }
-            echo '</div>';
+            echo '</div id="categories">';
         }
     }
 ?>

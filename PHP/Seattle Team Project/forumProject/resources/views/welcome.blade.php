@@ -1,6 +1,10 @@
 @extends('layouts.master')
 
 @section('head')
-@parent
+    @parent
     <title>Welcome</title>
-    @stop
+@stop
+
+@section('content')
+    <h1>It works!</h1>
+@stop

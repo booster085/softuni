@@ -4,6 +4,7 @@
 }
 
 #search-box {
+    box-sizing: border-box;
     height: 24px;
     display: inline-block;
     border: 1px solid #aaaaaa;
@@ -15,16 +16,17 @@
 }
 
 #search-btn {
+    box-sizing: border-box;
     height: 24px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     border: 1px solid #aaaaaa;
     border-left: none;
     width: 24px;
     padding: 0;
     position: relative;
     left: -5px;
-    bottom: 1px;
+    bottom: -5px;
     background: #ffffff url(../images/search_icon.png) no-repeat 2px;
 }
 #search-btn:hover {

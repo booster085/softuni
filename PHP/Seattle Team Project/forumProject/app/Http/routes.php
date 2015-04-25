@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController@welcome');
+Route::get('/', array('uses' => 'HomeController@welcome', 'as' => 'home'));
 
 Route::get('home', 'HomeController@index');
 
@@ -19,7 +19,17 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
 Route::group(array('before' => 'guest'), function(){
-    Route::get('/user/create/', 'UserController@getCreate');
-    Route::get('user/login', 'UserController@getLogin');
+    Route::get('/user/create', array('uses' => 'UserController@getCreate', 'as' => 'getCreate'));
+    Route::get('/user/login', 'UserController@getLogin');
+
+    // csrf => cross-site request forgery(also known as one-click attack ot sea-surf)
+    Route::group(array('before' => 'csrf'), function() {
+        // prevent from user posting
+        Route::post('/user/create', array('uses' => 'UserController@postCreate', 'as' => 'postCreate'));
+        Route::post('/user/login', 'UserController@postCreate');
+    });
 });
+
+
