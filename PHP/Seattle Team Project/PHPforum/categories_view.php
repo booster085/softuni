@@ -1,5 +1,7 @@
 <?php
     include 'connect.php';
+$conn->query("SET NAMES utf8");
+$conn->query("SET COLLATION_CONNECTION=utf8_bin");
     $sql = "SELECT
                 id,
                 cat_name,
@@ -22,15 +24,15 @@
         else
         {           
             echo '<div id="categories">';
-            $conn->query("SET NAMES utf8");
-            $conn->query("SET COLLATION_CONNECTION=utf8_bin");
+
             while($row = $result->fetch_assoc())
             {               
                 
                 echo '<div class="left-side">';
                 echo '<div class="category-heading">' . $row['cat_name'] . '</div>';
                 echo '<div class="category-description">' . $row['cat_description'] . '</div>';
-                
+                $conn->query("SET NAMES utf8");
+                $conn->query("SET COLLATION_CONNECTION=utf8_bin");
                 $sqlTopics = "SELECT
                                     id,
                                     topic_subject,
@@ -55,7 +57,7 @@
                 }
                 echo '</div>';                               
             }
-            echo '</div id="categories">';
+            echo '</div>';
         }
     }
 ?>

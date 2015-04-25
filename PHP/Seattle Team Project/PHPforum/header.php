@@ -32,4 +32,4 @@
             </div>
         </div>
         <div id="content">
-<?php include 'search_topic.php' ?>
+<?php include 'search_form.php' ?>
