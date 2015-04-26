@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2015 at 01:06 PM
+-- Generation Time: Apr 26, 2015 at 05:28 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `post_by` int(11) NOT NULL,
   `guest` varchar(50) DEFAULT NULL,
   `guest_email` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `posts`
@@ -69,7 +69,8 @@ INSERT INTO `posts` (`id`, `post_content`, `post_date`, `post_topic`, `post_by`,
 (4, 'Зддсадсад', '2015-04-25 12:06:16', 15, 21, 'guest', NULL),
 (7, 'sadasdasd', '2015-04-25 18:48:24', 5, 21, 'asd', 'da@asd.vf'),
 (8, 'Папо папо капо тапо', '2015-04-25 18:50:02', 5, 21, 'Папо', 'man@aaa.bg'),
-(10, 'Te taka be momche', '2015-04-25 22:45:55', 21, 21, 'krotko', 'mladej@aaa.bf');
+(10, 'Te taka be momche', '2015-04-25 22:45:55', 21, 21, 'krotko', 'mladej@aaa.bf'),
+(11, 'lalallaa', '2015-04-26 18:01:31', 30, 22, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -86,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `topics` (
   `topic_by` int(11) NOT NULL,
   `visits` int(11) NOT NULL DEFAULT '0',
   `topic_tags` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `topics`
@@ -106,7 +107,12 @@ INSERT INTO `topics` (`id`, `topic_subject`, `topic_description`, `topic_date`, 
 (22, 'Аз съм нова тема това е моето заглавие', 'Това е моя кирилизиран текст.', '2015-04-24 18:46:49', 3, 19, 0, ''),
 (23, 'Колко ти е часа?', 'Часът е 11:01. Времето е леко дъждовно.', '2015-04-25 11:01:55', 4, 22, 0, 'време час'),
 (24, 'Pak opitvam neshto', 'Iskame da stane i pravim proba .', '2015-04-25 21:31:32', 3, 19, 0, ''),
-(25, 'The virtuosity in war', 'War against the whole human kind proba moba.', '2015-04-25 21:32:50', 1, 19, 0, '');
+(25, 'The virtuosity in war', 'War against the whole human kind proba moba.', '2015-04-25 21:32:50', 1, 19, 0, ''),
+(26, 'I''m new in the city', 'Hi, would you be pleased to go out with me, I don''t know anybody here. Thank You!', '2015-04-26 17:52:51', 3, 22, 0, ''),
+(27, 'I''m new in the city', 'Hi, would you be pleased to go out with me, I don''t know anybody here. Thank You!', '2015-04-26 17:54:18', 3, 22, 0, ''),
+(28, 'I''m new in the city', 'Hi, would you be pleased to go out with me, I don''t know anybody here. Thank You!', '2015-04-26 17:55:14', 3, 22, 0, ''),
+(29, 'I''m new in the city', 'Hi, would you be pleased to go out with me, I don''t know anybody here. Thank You!', '2015-04-26 17:55:32', 3, 22, 0, ''),
+(30, 'Dublirane', 'Kofti moment', '2015-04-26 17:56:23', 1, 22, 0, '');
 
 -- --------------------------------------------------------
 
@@ -131,7 +137,7 @@ INSERT INTO `users` (`id`, `name`, `password`, `email`, `date_registered`, `is_a
 (18, 'Pesho', '8588310a98676af6e22563c1559e1ae20f85950792bdcd0c8f334867c54581cd', 'pesho@pesh.com', '2015-04-22 15:12:46', 0),
 (19, 'Anton', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'anton@anton.com', '2015-04-22 15:12:58', 1),
 (20, 'Gosho', '02359ffb8eb977c499d03c598de268df19edb14236fd3514dcf5344fcdd43833', 'pesho@pesh.com', '2015-04-22 15:26:43', 0),
-(21, 'guest', 'guest', 'guest@abv.bg', '2015-04-22 18:13:31', 0),
+(21, 'guest', 'sadhikjashduiasd', 'guest@abv.bg', '2015-04-22 18:13:31', 0),
 (22, 'iva', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'ivo@abv.bg', '2015-04-24 16:38:13', 0);
 
 --
@@ -175,12 +181,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `topics`
 --
 ALTER TABLE `topics`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `users`
 --
