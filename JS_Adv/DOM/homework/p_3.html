@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paragraph Generator</title>
+</head>
+<body>
+	<section id="first"></section>
+	<section id="second"></section>
+</body>
+<script type="text/javascript">
+var elemMachine = (function () {
+	function createParagraph(id, text) {
+		var parrent = document.getElementById(id),
+		p = document.createElement('p');
+		p.innerText = text;
+		parrent.appendChild(p);
+	}
+	return {createParagraph} //new syntax
+	// return {'createParagraph' : createParagraph}
+	})();
+elemMachine.createParagraph('first', 'First div first paragraph');
+elemMachine.createParagraph('first', 'First div second paragraph');
+elemMachine.createParagraph('second', 'Second div first paragraph');
+elemMachine.createParagraph('second', 'Second div second paragraph');
+</script>
+</html>

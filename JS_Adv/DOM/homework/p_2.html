@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validate Email</title>
+</head>
+<body>
+<div style="width: 150px">
+	<input id="validate-field" type="text">
+	<div id="display-mail"></div>
+	<button id="validate-btn">validate</button>
+</div>
+</body>
+<script type="text/javascript">
+	var input = document.getElementById('validate-field'),
+		disp = document.getElementById('display-mail'),
+		mail;
+	input.addEventListener('keyup', function() {
+		var color = 'red',
+		reg = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/gm;
+		mail = this.value;
+		disp.innerText = mail;
+		if (reg.test(mail)) {
+			color = 'lightgreen';
+		}
+		disp.style.background = color;
+	}, false)
+	document.getElementById('validate-btn').addEventListener('click', function(e) {
+		function Cat(name) {
+			this.name = name,
+			this.toString = function() {
+				return 'I am cat. My name is ' + this.name + '.';
+			} 
+		};
+		function EuropeanCat(name) {
+			this.name = name,
+			this.breed = 'european gray'
+		}
+		// EuropeanCat.prototype = Object.create(Cat.prototype);
+		// EuropeanCat.prototype.constructor = EuropeanCat;
+		
+		Object.prototype.extends = function(parrent) {
+			this.prototype = Object.create(parrent.prototype);
+			this.prototype.constructor = this;
+		}
+		EuropeanCat.extends(Cat);
+
+		var tom = new Cat('Tommy');
+		var max = new EuropeanCat('Max');
+		console.log(tom)
+		console.log(max)
+	});
+
+</script>
+</html>
