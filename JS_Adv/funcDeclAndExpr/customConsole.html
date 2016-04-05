@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>JS custom console</h1>
+</body>
+</html>
+<script>
+	var specialConsole = (function () {
+		var replacePlaceholders = function () {
+				var args = replacePlaceholders.arguments,
+					mainStr = args[0],
+					ph,
+					param,
+					index;
+				if (args.length > 1) {
+					ph = mainStr.match(/\{\d+\}/g);
+					ph.forEach(function (k, v) {
+						index = parseInt(k.substr(1, k.length - 2)) + 1;
+						if (index > args.length - 1) {
+							throw new specialConsoleError().message;
+						}
+						param = args[index];
+						mainStr = mainStr.replace(k, param);
+					})
+				};
+				return mainStr;
+			},
+			writeLine = function () {
+				console.log(replacePlaceholders.apply(this, writeLine.arguments));
+			},
+			writeError = function () {
+				console.error(replacePlaceholders.apply(this, writeError.arguments));
+			},
+			writeWarning = function () {
+				console.warn(replacePlaceholders.apply(this, writeWarning.arguments));
+			},
+			writeInfo = function () {
+				console.info(replacePlaceholders.apply(this, writeInfo.arguments));
+			}
+			return {
+				//Ecmascript 6 syntax where object key name = value name
+				// writeLine : writeLine 
+				writeLine,
+				writeError,
+				writeWarning,
+				writeInfo
+			}
+			function specialConsoleError(message) {
+				this.name = 'specialConsole Error';
+				this.message = message || 'Invalid number of arguments';
+				this.stack = (new Error()).stack;
+			}
+	})()
+	specialConsole.writeLine("Message: {0} tralala {1}, papap {2} ok.", "hello", "koko", "ibago");
+	specialConsole.writeLine("Message: hello");
+	specialConsole.writeLine("Message: {0}", "hello");
+	specialConsole.writeLine("Object: {0}", { name: "Gosho", toString: function() { return this.name }});
+	specialConsole.writeError("Error: {0}", "A fatal error has occurred.");
+	specialConsole.writeWarning("Warning: {0}", "You are not allowed to do that!");
+	specialConsole.writeInfo("Info: {0}", "Hi there! Here is some info for you.");
+	specialConsole.writeError("Error object: {0}", { msg: "An error happened", toString: function() { return this.msg }});
+</script>
