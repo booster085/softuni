@@ -1,0 +1,12 @@
+You can dynamically add tags into multiple selection menu.
+Dependecies:
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+
+add to the end:
+<script>
+   $('select.dropdown').dropdown();
+</script>
+Works on MultipleSelection menu, you just have to add tags class to select element classes or to uncomment a few lines and use it as Jquery plugin.

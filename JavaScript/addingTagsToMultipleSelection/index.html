@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>addingTads</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+	<script src="js/tags.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="main ui container">
+		<div class=" field">
+			<label>Tags</label>
+			<!-- Added tags class to select menu -->
+			<select name="skills" multiple="" class="ui fluid dropdown search multiple tags">
+				<option value="">Skills</option>
+				<option value="angular">Angular</option>
+				<option value="css">CSS</option>
+				<option value="design">Graphic Design</option>
+				<option value="ember">Ember</option>
+				<option value="html">HTML</option>
+			</select>
+		</div>
+	</div>
+</body>
+<script>
+	$('select.dropdown').dropdown();
+	$('.dropdown.tags').tags();
+</script>
